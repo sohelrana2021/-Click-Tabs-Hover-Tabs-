@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Button</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- -------------------------------tab full contant ------------------------------- -->
+  <div class="container">
+    <h2>How TO - Click Tabs</h2>
+    <div id="html" class="c-content">
+      <h2>this is html</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, neque?
+      </p>
+    </div>
+    <div id="css" class="c-content">
+      <h2>this is css</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, neque?
+      </p>
+    </div>
+    <div id="javascript" class="c-content">
+      <h2>this is javascript</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, neque?
+      </p>
+    </div>
+    <div id="react" class="c-content">
+      <h2>this is react</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, neque?
+      </p>
+    </div>
+    <div id="node" class="c-content">
+      <h2>this is node js</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, neque?
+      </p>
+    </div>
+    <div id="mongo" class="c-content">
+      <h2>this is mongoDB</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, neque?
+      </p>
+    </div>
+  </div>
+   <!-- button create -->
+   <div class="container">
+     <div class="btn-box">
+       <button class="btnlink" onclick="mybtnfun('html',this, 'green')">html</button>
+       <button class="btnlink" onclick="mybtnfun('css',this, 'red')">css</button>
+       <button class="btnlink" onclick="mybtnfun('javascript',this, 'orange')" id="defults">javascript</button>
+       <button class="btnlink" onclick="mybtnfun('react',this, 'blue')">react</button>
+       <button class="btnlink" onclick="mybtnfun('node',this, 'oragreenyellownge')">node</button>
+       <button class="btnlink" onclick="mybtnfun('mongo',this, 'yellow')">mongo</button>
+       </div>
+   </div>
+
+
+    <!-- -------------------------------onmouseover tab full contant 2------------------------------- -->
+      <div class="container">
+        <h2>How TO - Hover Tabs</h2>
+        <div class="btn">
+          <button class="tablink" onmouseover="opencity('Paris' , this, 'green')" id="defaultOpen">Paris</button>
+          <button class="tablink" onmouseover="opencity('Dhaka', this, 'orange')">Dhaka</button>
+          <button class="tablink" onmouseover="opencity('London', this, 'red')">London</button>
+        </div>
+        <div id="London" class="tabcontant">
+          <h2>This is London</h2>
+          <p>london is capital in Eangland</p>
+        </div>
+        <div id="Paris" class="tabcontant">
+          <h2>This is Paris</h2>
+          <p>Paris is capital in Italy</p>
+        </div>
+        <div id="Dhaka" class="tabcontant">
+          <h2>This is Dhaka</h2>
+          <p>Dhaka is capital in Bangladesh</p>
+        </div>
+    <script src="apps.js"></script>
+</body>
+</html>
